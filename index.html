@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <title>Paraumir portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-row">
+                <button type="button" class="header__menu-switcher menu-switcher">
+                    <img src="./img/flatline.svg" alt class="menu-switcher__line">
+                    <img src="./img/flatline.svg" alt class="menu-switcher__line">
+                    <img src="./img/flatline.svg" alt class="menu-switcher__line">
+                </button>
+                <ul class="nav-list header__navigation">
+                    <li class="nav-list__item"><a href="./index.html" class="nav-list__link nav-list__link--active">Главная</a></li>
+                    <li class="nav-list__item"><a href="./skills.html" class="nav-list__link">Навыки</a></li>
+                    <li class="nav-list__item"><a href="./contacts.html" class="nav-list__link">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="header__wrapper">
+            <h1 class="header__title">
+                <strong>Здравствуйте, <em>я Глеб</em></strong><br>
+                разработчик мультимедийных приложений
+            </h1>
+            <a class="btn">Подробнее</a>
+        </div>
+    </header>
+
+    <main class="section">
+         <h2 class="title-1">Мои работы</h2>
+        <h1 class="header__title">
+        <div class="container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <div class="review-card swiper-slide">
+                        <div class="review-card-header">
+
+                        </div>
+                        <div class="container__card">
+                            <div class="wrapper">
+                                <div><img src="./img/projects/01.jpg"> </div>
+                                <h1> Банкомат</h1>
+                                <p>Примитивная модель работы банкомата</p>
+                            </div>
+                            <div class="button-wrapper">
+                                <a href="./project1.html" class="btn">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card swiper-slide">
+                        <div class="container__card">
+                            <div class="wrapper">
+                                <div><img src="./img/projects/03.jpg"> </div>
+                                <h1> файловый менеджер</h1>
+                                <p>Примитивная модель файлового менеджера</p>
+                            </div>
+                            <div class="button-wrapper">
+                                <a href="./project2.html" class="btn">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card swiper-slide">
+                        <div class="container__card">
+                            <div class="wrapper">
+                                <div><img src="./img/projects/02.jpg"> </div>
+                                <h1> БД ресторана</h1>
+                                <p>модель БД ресторана</p>
+                            </div>
+                            <div class="button-wrapper">
+                                <a href="./project3.html" class="btn">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card swiper-slide">
+                        <div class="container__card">
+                            <div class="wrapper">
+                                <div><img src="./img/projects/06.jpg"> </div>
+                                <h1> Raspberry</h1>
+                                <p>Minecraft сервер</p>
+                            </div>
+                            <div class="button-wrapper">
+                                <a  href="./project4.html" class="btn">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+            </div>
+        </div>
+        <section class="stat">
+            <div class="container stat-container">
+                <div class="stat-card">
+                    <h3 class="stat-title">С++</h3>
+                    <p class="stat-descr">3 года опыта</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-title">Java</h3>
+                    <p class="stat-descr">5 лет опыта</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-title">WEB</h3>
+                    <p class="stat-descr"> 3 года опыта</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <ul class="social">
+                    <li class="social__item"><a href="https://vk.com/paraumir"><img src="./img/icons/vk.png" alt="Link" class="fimg1"></a></li>
+                    <li class="social__item"><a href="https://github.com/paraumir"><img src="./img/icons/gitHub.png" alt="Link" class="fimg"></a></li>
+                </ul>
+                <div class="copyright">
+                    <p>©paraumir</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body></html>

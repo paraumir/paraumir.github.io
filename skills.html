@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Paraumir portfolio</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" href="favicon.ico" sizes="any">
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-row">
+                <button type="button" class="header__menu-switcher menu-switcher" >
+                    <img src="./img/flatline.svg" alt class="menu-switcher__line">
+                    <img src="./img/flatline.svg" alt class="menu-switcher__line">
+                    <img src="./img/flatline.svg" alt class="menu-switcher__line">
+                  </button>
+                <ul class="nav-list header__navigation">
+                    <li class="nav-list__item"><a href="./index.html" class="nav-list__link">Главная</a></li>
+                    <li class="nav-list__item"><a href="./skills.html" class="nav-list__link nav-list__link--active">Навыки</a></li>
+                    <li class="nav-list__item"><a href="./contacts.html" class="nav-list__link">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="section1">
+        <div class="container container-skills">
+                <h1 class="title-1">Навыки</h1>
+                
+                <ul class="skills">
+                    <li class="skill">
+                        <details>
+                            <summary class="skill__title"> Программирование С++</summary>
+                            <p class="skill__text">Владею junior навыками программирования на языке C++. Мною написано несколько моделей программного обеспечения для различных задач.</p>
+                            </details>
+                    </li>
+                    <li class="skill">
+                        <details>
+                            <summary class="skill__title">Программирование Java</summary>
+                            <p class="skill__text">Владею junior навыками программирования на языке Java. Мною написано несколько моделей программного обеспечения для различных задач. Так же обучаюсь написанию и дизайну видеоигр.</p>
+                        </details>
+                    </li>
+                    <li class="skill">
+                        <details>
+                            <summary class="skill__title">WEB программирование</summary>
+                            <p class="skill__text">Я начинающий web разработчик. Владею знаниями языков HTML, CSS и JS.</p>
+                        </details>
+                    </li>
+                    <li class="skill">
+                        <details>
+                            <summary class="skill__title">Работа  с серверными машинами</summary>
+                            <p class="skill__text">Имею опыт работы с серверными машинами и настройки их под различные задачи.</p>
+                        </details>
+                    </li>
+                    <li class="skill">
+                        <details>
+                            <summary class="skill__title">Работа с видео, аудио и фото</summary>
+                            <p class="skill__text">Владею продвинутыми навыками обработки видео, аудио и фото. Так же имею художественное образование.</p>
+                        </details>
+                    </li>          
+                </ul>
+        </div>
+        
+    </main>
+
+ <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <ul class="social">
+                    <li class="social__item"><a href="https://vk.com/paraumir"><img src="./img/icons/vk.png" alt="Link" class="fimg1"></a></li>
+                    <li class="social__item"><a href="https://github.com/paraumir"><img src="./img/icons/gitHub.png" alt="Link" class="fimg"></a></li>
+                </ul>
+                <div class="copyright">
+                    <p>©paraumir</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        AOS.init({duration: 9000,});
+    </script>
+</body>
+</html>
