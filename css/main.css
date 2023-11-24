@@ -237,7 +237,7 @@ footer {
 
 .menu-switcher {
     position: relative;
-    z-index: 99999999;
+    z-index: 9;
     display: none;
     flex-direction: column;
     transition: gap 0.4s ease-in-out;
@@ -262,7 +262,7 @@ footer {
 }
 
 .menu-switcher__line:nth-child(1) {
-    top: 0;
+    top:0;
 }
 
 .menu-switcher__line:nth-child(3) {
