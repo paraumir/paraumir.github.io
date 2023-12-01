@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" sizes="any">
     <title>Paraumir portfolio</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
 </head>
 <body>
-    <nav class="nav">
+        <nav class="nav">
         <div class="container">
             <div class="nav-row">
                 <button type="button" class="header__menu-switcher menu-switcher">
@@ -17,7 +20,7 @@
                     <img src="./img/flatline.png" alt class="menu-switcher__line">
                 </button>
                 <ul class="nav-list header__navigation">
-                    <li class="nav-list__item"><a href="./index.html" class="nav-list__link nav-list__link--active">Главная</a></li>
+                    <li class="nav-list__item"><a href="./index.html" class="nav-list__link nav-list__link">Главная</a></li>
                     <li class="nav-list__item"><a href="./skills.html" class="nav-list__link">Навыки</a></li>
                     <li class="nav-list__item"><a href="./contacts.html" class="nav-list__link">Контакты</a></li>
                 </ul>
@@ -26,18 +29,57 @@
     </nav>
 
     <main class="section1">
-        <div class="container">
-            <div class="project-details">
 
                 <h1 class="title-1">Файловый менеджер</h1>
+        <div class="container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <div class="review-card swiper-slide">
+                        <div>
+                            <div class="wrapper">
+                                <div><img src="./img/projects/03-1.jpg"> </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="review-card swiper-slide">
+                        <div>
+                            <div class="wrapper">
+                                <div><img src="./img/projects/03-2.jpg"> </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
 
-                <img src="./img/projects/03.jpg" alt="" class="project-details__cover">
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
 
+            </div>
+            <div class="project-details">
                 <div class="project-details__desc">
-                    <p> Это модель примитивного файлового менеджера. В ней представлены функции записи текста и изобрадений. Так же она предоставляет доступ к записанным файлам в своей дирректории. Данный проект выполнен на языке Java с использованием паттерна MVC.</p>
+                    <p> Проект "Файлового менеджера" представляет собой инновационное приложение, разработанное мной на втором курсе. Этот многофункциональный редактор позволяет пользователям создавать и редактировать текстовые документы, а также встраивать графические элементы для более выразительного и креативного контента. Проект написан на языке программирования Java с использованием MVC паттерна.
+                        <br><br>
+
+Основные функции:
+<br><br>
+Работа с текстовыми документами: Проект предоставляет пользователю удобный интерфейс для создания, редактирования и сохранения текстовых документов. Он обеспечивает базовые возможности форматирования и стилизации текста.
+<br><br>
+Интеграция графических элементов: Уникальная особенность проекта заключается в возможности вставки графических элементов непосредственно в текстовые документы. Пользователь может легко добавлять изображения к тексту, что расширяет возможности создания визуально привлекательного контента.
+<br><br>
+Меню и обновление интерфейса: Проект предусматривает динамическое обновление пользовательского интерфейса через меню, что обеспечивает простоту навигации и управления функциями приложения.
+<br><br>
+Пример использования:
+<br><br>
+Приведенный в коде пример демонстрирует создание экземпляра основного окна приложения, добавление тестового текста и изображения, а также обновление меню. Это лишь малая часть возможностей, которые предоставляет разработанный редактор.</p>
                 </div>
             </div>
         </div>
+     
     </main>
 
     <footer class="footer">
@@ -54,7 +96,13 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/swiper_pr.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>

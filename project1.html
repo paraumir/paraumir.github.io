@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" sizes="any">
     <title>Paraumir portfolio</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
 </head>
 <body>
         <nav class="nav">
@@ -17,7 +20,7 @@
                     <img src="./img/flatline.png" alt class="menu-switcher__line">
                 </button>
                 <ul class="nav-list header__navigation">
-                    <li class="nav-list__item"><a href="./index.html" class="nav-list__link nav-list__link--active">Главная</a></li>
+                    <li class="nav-list__item"><a href="./index.html" class="nav-list__link nav-list__link">Главная</a></li>
                     <li class="nav-list__item"><a href="./skills.html" class="nav-list__link">Навыки</a></li>
                     <li class="nav-list__item"><a href="./contacts.html" class="nav-list__link">Контакты</a></li>
                 </ul>
@@ -26,18 +29,54 @@
     </nav>
 
     <main class="section1">
-        <div class="container">
-            <div class="project-details">
 
                 <h1 class="title-1">Банкомат</h1>
+        <div class="container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <div class="review-card swiper-slide">
+                        <div class="container__card">
+                            <div class="wrapper">
+                                <div><img src="./img/projects/01.jpg"> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card swiper-slide">
+                        <div class="container__card">
+                            <div class="wrapper">
+                                <div><img src="./img/projects/01-2.jpg"> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card swiper-slide">
+                        <div class="container__card">
+                            <div class="wrapper">
+                                <div><img src="./img/projects/01-3.jpg"> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card swiper-slide">
+                        <div class="container__card">
+                            <div class="wrapper">
+                                <div><img src="./img/projects/01-4.jpg"> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                <img src="./img/projects/01.jpg" alt="" class="project-details__cover">
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
 
+            </div>
+            <div class="project-details">
                 <div class="project-details__desc">
-                    <p>Это примитивная модель работы банкомата. Она умеет хранить список карт клиентов и высчитывает кол-во купюр различного номинала, оставшихся в банкомате, исходя из этого выдает сумму купюрами разного номинала. Данный проект был моей курсовой работой на первом курсе. Модель банкомата построена по принципам ООП с использованием системы сигналов. Данный проект выполнен на языке программирования С++</p>
+                    <p> Это модель работы банкомата. Данный прект был курсовой работой первого курса, выполнен на языке программирования С++ с использованием принципов ООП и сигналов.<br><br> Данная модель способна хранить данные о пользователях и данные  о количестве оставшихся купюр различного номинала. Исходя из этого, банкомат выдает сумму имеющимися в наличии купюрами.</p>
                 </div>
             </div>
         </div>
+     
     </main>
 
     <footer class="footer">
@@ -54,7 +93,13 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/swiper_pr.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>

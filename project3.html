@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" sizes="any">
     <title>Paraumir portfolio</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
 </head>
-
 <body>
-    <nav class="nav">
+        <nav class="nav">
         <div class="container">
             <div class="nav-row">
                 <button type="button" class="header__menu-switcher menu-switcher">
@@ -19,7 +21,7 @@
                     <img src="./img/flatline.png" alt class="menu-switcher__line">
                 </button>
                 <ul class="nav-list header__navigation">
-                    <li class="nav-list__item"><a href="./index.html" class="nav-list__link nav-list__link--active">Главная</a></li>
+                    <li class="nav-list__item"><a href="./index.html" class="nav-list__link nav-list__link">Главная</a></li>
                     <li class="nav-list__item"><a href="./skills.html" class="nav-list__link">Навыки</a></li>
                     <li class="nav-list__item"><a href="./contacts.html" class="nav-list__link">Контакты</a></li>
                 </ul>
@@ -28,18 +30,65 @@
     </nav>
 
     <main class="section1">
+
+                <h1 class="title-1">БД РЕСТОРАНА</h1>
         <div class="container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <div class="review-card swiper-slide">
+                        <div class="container__card">
+                            <div class="wrapper">
+                                <div><img src="./img/projects/02.jpg"> </div>
+                               
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="review-card swiper-slide">
+                        <div class="container__card">
+                            <div class="wrapper">
+                                <div><img src="./img/projects/02-1.jpg"> </div>
+                               
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
             <div class="project-details">
-
-                <h1 class="title-1">БД ресторана</h1>
-
-                <img src="./img/projects/02.jpg" alt="" class="project-details__cover">
-
                 <div class="project-details__desc">
-                    <p>Это примитивная модель базы данных ресторана. Она способна хранить в себе данные об онлайн заказах и заказах из зала. Она высчитывает ко-во блюд в заказе и их стоимость. Так же программа имеет удобный пользовательский интерфейс. Данный проект выполнен на языке Java с использованием паттерна MVC.</p>
+                    <p> Проект "База данных Ресторана"<br>
+
+Данный проект представляет собой систему онлайн-заказа еды и напитков с использованием объектно-ориентированного подхода в языке программирования Java с паттерном MVC. В основе проекта лежит иерархия классов для представления различных позиций меню, а также классы для управления заказами. Данная работа была написана мной на втором курсе обучения. 
+<br><br>
+Основные классы в проекте:
+<br>
+Item: Абстрактный класс, представляющий товар в меню. От него наследуются классы Drink и Dish, представляющие напитки и блюда соответственно. Каждый товар имеет уникальный идентификатор, название и описание.
+<br><br>
+InternetOrder: Класс, представляющий заказ, оформленный через интернет. Содержит массив позиций заказа, позволяет вычислить общую стоимость и количество предметов в заказе. Также предоставляет методы для добавления и удаления позиций.
+<br><br>
+OrderManager: Класс, управляющий заказами. Позволяет добавлять заказы с уникальными идентификаторами (в данном случае, адресами), а также получать заказы по их идентификаторам. В случае попытки добавления заказа с уже существующим идентификатором, выбрасывается исключение OrderAlreadyAddedException.
+<br>
+Пример использования проекта в методе main:
+<br><br>
+Создаются объекты Drink и Dish, представляющие напиток и блюдо.
+Формируется заказ InternetOrder с использованием созданных позиций.
+Выводится общая стоимость и количество предметов в заказе.
+Добавляется новая позиция в заказ и снова выводится общая стоимость и количество предметов.
+Удаляется позиция из заказа и выводится обновленная информация.
+Получаются и выводятся отсортированные по убыванию цены позиции заказа.
+Проект также включает тесты исключений, например, попытки создать блюдо с некорректными параметрами, добавить заказ с уже существующим адресом или получить заказ для несуществующего столика. В случае возникновения исключений, программа выводит сообщения об ошибке в стандартный поток ошибок.            
+</p>
                 </div>
             </div>
         </div>
+     
     </main>
 
     <footer class="footer">
@@ -56,7 +105,13 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/swiper_pr.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
