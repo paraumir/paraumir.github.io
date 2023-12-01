@@ -1010,13 +1010,15 @@ p {
 }
 
 .fimg {
-    height: 40px;
+    height: auto;
     width: 40px;
+    border-radius: none;
 }
 
 .fimg1 {
-    height: 40px;
     width: 60px;
+    height: auto;
+    border-radius: none;
 }
 
 .img_me {
@@ -1032,3 +1034,8 @@ img{
 .p_me{
     color: aquamarine;
 }
+@media (max-width: 767px) {
+        .project-details1 {
+            flex-direction: column;
+        }
+    }
